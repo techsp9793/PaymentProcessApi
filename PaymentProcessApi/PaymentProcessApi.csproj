@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PaymentProcessApi.Application\PaymentProcessApi.Application.csproj" />
+    <ProjectReference Include="..\PaymentProcessApi.Entity.Dtos\PaymentProcessApi.Entity.Dtos.csproj" />
+    <ProjectReference Include="..\PaymentProcessApi.Entity\PaymentProcessApi.Entity.csproj" />
+    <ProjectReference Include="..\PaymentProcessApi.Services\PaymentProcessApi.Services.csproj" />
+  </ItemGroup>
+
+</Project>
